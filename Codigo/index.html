@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Nico Nico</title>
+</head>
+<body>
+    <header>
+        <h1>Pasteleria Nico Nico</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Pasteles</a></li>
+                <li><a href="#">Bocadillos</a></li>
+                <li><a href="#">Postres</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+                <!-- Seccion de inicio -->
+
+        <section id="featured-product">
+            <img src="Imagenes/Crema Volteada.jpg" alt="Postre destacado">
+            <div class="product-info">
+                <h1>¿Pasión por un postre dulce?</h1>
+                <p>Enamórate de nuestros postres o crealos</p>
+                <button>Preparar</button>
+            </div>
+        </section>
+
+                <!-- Seccion de carrusel -->
+
+        <section id="carousel">
+            <h2>Nuestros Postres</h2>
+            <div class="carousel-container">
+                <div class="carousel-slide">
+                    <div class="carousel-item">
+                        <img src="Imagenes/Crema Volteada.jpg" alt="Postre 1">
+                        <p>Crema Volteada</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Imagenes/Pai de limon.jpg" alt="Postre 2">
+                        <p>Pai</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Imagenes/Tres Leches.jpg" alt="Postre 3">
+                        <p>Tres Leches</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Imagenes/Torta Chocolate.jpg" alt="Postre 4">
+                        <p>Torta de Chocolate</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Imagenes/Crema Volteada.jpg" alt="Postre 5">
+                        <p>Crema Volteada</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Imagenes/Torta Chocolate.jpg" alt="Postre 6">
+                        <p>Torta de Chocolate</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-button prev">&#10094;</button>
+            <button class="carousel-button next">&#10095;</button>
+
+        </section>
+
+   <!-- Sección donde se muestran los productos -->
+   <section id="product-display">
+    <h2>Nuestros Productos</h2>
+    <div class="tab-buttons">
+        <button class="tab-button active" data-tab="tab1">Categoría Pasteles</button>
+        <button class="tab-button" data-tab="tab2">Categoría Kekes</button>
+        <button class="tab-button" data-tab="tab3">Categoría Bocadillos</button>
+        <button class="tab-button" data-tab="tab4">Categoría Pai</button>
+    </div>
+    <div class="tab-content">
+        <div id="tab1" class="tab-pane active">
+            <div class="product-container">
+                <!-- Categoría 1 Productos -->
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="Imagenes/Crema Volteada.jpg" alt="Producto 1">
+                        <div class="product-buttons">
+                            <button class="favorite">❤</button>
+                            <button class="quick-view">👁</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Producto 1</h3>
+                        <p>$10.00</p>
+                        <button class="select-options">Seleccionar Opciones</button>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="Imagenes/Crema Volteada.jpg" alt="Producto 2">
+                        <div class="product-buttons">
+                            <button class="favorite">❤</button>
+                            <button class="quick-view">👁</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Producto 1</h3>
+                        <p>$10.00</p>
+                        <button class="select-options">Seleccionar Opciones</button>
+                    </div>
+                </div>
+                <!-- Añadir más productos de Categoría 1 -->
+            </div>
+        </div>
+        <div id="tab2" class="tab-pane">
+            <div class="product-container">
+                <!-- Categoría 2 Productos -->
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="Imagenes/Torta Chocolate.jpg" alt="Producto 3">
+                        <div class="product-buttons">
+                            <button class="favorite">❤</button>
+                            <button class="quick-view">👁</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Producto 2</h3>
+                        <p>$12.00</p>
+                        <button class="select-options">Seleccionar Opciones</button>
+                    </div>
+                </div>
+                <!-- Añadir más productos de Categoría 2 -->
+            </div>
+        </div>
+        <div id="tab3" class="tab-pane">
+            <div class="product-container">
+                <!-- Categoría 3 Productos -->
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="Imagenes/Crema Volteada.jpg" alt="Producto 4">
+                        <div class="product-buttons">
+                            <button class="favorite">❤</button>
+                            <button class="quick-view">👁</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Producto 3</h3>
+                        <p>$15.00</p>
+                        <button class="select-options">Seleccionar Opciones</button>
+                    </div>
+                </div>
+                <!-- Añadir más productos de Categoría 3 -->
+            </div>
+        </div>
+        <div id="tab4" class="tab-pane">
+            <div class="product-container">
+                <!-- Categoría 4 Productos -->
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="Imagenes/Crema Volteada.jpg" alt="Producto 4">
+                        <div class="product-buttons">
+                            <button class="favorite">❤</button>
+                            <button class="quick-view">👁</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Producto 4</h3>
+                        <p>$18.00</p>
+                        <button class="select-options">Seleccionar Opciones</button>
+                    </div>
+                </div>
+                <!-- Añadir más productos de Categoría 4 -->
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Sección de blog -->
+<section id="our-blog">
+    <h2>Nuestro Blog</h2>
+    <div class="blog-container">
+        <div class="blog-item">
+            <div class="blog-image">
+                <img src="Imagenes/Imagen Blog 1.jpg" alt="Blog 1">
+            </div>
+            <div class="blog-info">
+                <h3>Título del Blog 1</h3>
+                <p>Subtítulo del Blog 1</p>
+            </div>
+        </div>
+        <div class="blog-item">
+            <div class="blog-image">
+                <img src="Imagenes/Imagen Blog 2.jpg" alt="Blog 2">
+            </div>
+            <div class="blog-info">
+                <h3>Título del Blog 2</h3>
+                <p>Subtítulo del Blog 2</p>
+            </div>
+        </div>
+        <div class="blog-item">
+            <div class="blog-image">
+                <img src="Imagenes/Imagen Blog 3.jpg" alt="Blog 3">
+            </div>
+            <div class="blog-info">
+                <h3>Título del Blog 3</h3>
+                <p>Subtítulo del Blog 3</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Modal para vista rápida -->
+<div class="modal" id="product-modal">
+    <div class="modal-content">
+        <span class="close-button" id="close-modal">&times;</span>
+        <div class="modal-body">
+            <div class="modal-images">
+                <img id="modal-product-image" src="" alt="Producto" />
+            </div>
+            <div class="modal-details">
+                <h2 id="modal-product-title">Quiche caprese</h2>
+                <p id="modal-product-price">S/ 65.00</p>
+                <p id="modal-product-description">
+                    Con mozzarella, tomate y albahaca. Mantener refrigerado.
+                </p>
+                <label for="size-select">Seleccionar el tamaño:</label>
+                <select id="size-select">
+                    <option value="">Elige una opción</option>
+                    <option value="pequeño">Pequeño</option>
+                    <option value="mediano">Mediano</option>
+                    <option value="grande">Grande</option>
+                </select>
+                <div class="quantity-control">
+                    <button id="decrease-quantity">-</button>
+                    <span id="quantity-display">1</span>
+                    <button id="increase-quantity">+</button>
+                </div>
+                <button id="add-to-cart">Añadir al carrito</button>
+                <p>Categorías: Pastelería salada, Quiche</p>
+                <div class="share-buttons">
+                    <button>Compartir</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</main>
+<script src="script.js"></script>
+</body>
+</html>
